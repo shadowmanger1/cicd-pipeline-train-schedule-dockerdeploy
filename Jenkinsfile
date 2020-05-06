@@ -14,7 +14,7 @@ pipeline {
 	    }
 	    steps {
                 script {
-			app = docker.build("shadowmanger/train-schedule")
+			app = docker.build("shadowmanger1/train-schedule")
 			app.inside {
 				sh 'echo $(curl localhost:8080)'
 			}
